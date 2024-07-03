@@ -1,0 +1,232 @@
+body {
+    background-color: black;
+}
+
+.section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+.arrowImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}
+
+.mx-4 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.label-2 {
+    color: #c57c15;
+}
+
+.SubText {
+    color: white;
+}
+
+.home-menu {
+    /* background-image: url(./assets/img-pattern.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s, background-size 0.5s;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.home-menu:hover {
+    transform: scale(1.05);
+}
+.OfferText{
+    color: #c57c15;
+    font-size: xx-large;
+}
+.home-menu img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    transition: transform 0.5s;
+
+}
+
+.home-menu:hover img {
+    transform: rotateY(180deg);
+}
+
+#middle-image {
+    padding-top: 10rem;
+    
+}
+#MiddleDiv{
+ padding-top: 15rem;
+ justify-content: space-around;
+ 
+}
+
+#DelMo {
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.btn {
+    background-color: #c57c15;
+}
+
+.testi {
+    padding: 60px 0;
+    position: relative;
+}
+
+.has-bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    font-size: 100px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.headline-2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.profile-name {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.submenu1, .submenu2, .submenu3 {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* .home-menu:hover .submenu1, .submenu2, .submenu3 {
+    display: block;
+} */
+
+.submenu1, .submenu2, .submenu3 p {
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+}
+.Menulink{
+    color: white;
+}
+.Menu-Div{
+    cursor: pointer;
+   margin-top: 30px;
+    background-color: #c57c15;
+    border: 4px;
+
+}
+
+
+ #Loc-Dishes{
+   display: none;
+    /* background-image: url(./assets/img-pattern.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s, background-size 0.5s;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-between;
+    transition: transform 1s infinite;
+}
+#Loc-Dishes:hover{
+    transform: scale(1.05);
+} 
+#Loc-Dishes img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    transition: transform 0.5s infinite;
+}
+#Loc-Dishes:hover img{
+transform: translateX(180deg);
+}
+#Item-List{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+ #Snacks, #Drinks, #Int-Dishes{
+    display: none;
+     background-repeat: no-repeat;
+     background-position: center;
+     transition: transform 0.5s, background-size 0.5s;
+     position: relative;
+     overflow: hidden;
+     justify-content: space-between;
+     transition: transform 1s infinite;
+ }
+  #Drinks{
+    display: none;
+     background-repeat: no-repeat;
+     background-position: center;
+     transition: transform 0.5s, background-size 0.5s;
+     position: relative;
+     overflow: hidden;  
+     justify-content: space-between;
+     transition: transform 1s infinite;
+ } 
