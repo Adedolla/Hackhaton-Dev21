@@ -40,15 +40,48 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// searchbar
-// Close the dropdown if the user clicks outside of it
-document.addEventListener("click", function(event) {
-  var dropdown = document.querySelector(".dropdown-content");
-  var searchContainer = document.querySelector(".search-container");
-  if (event.target.closest(".search-container") !== searchContainer) {
-      dropdown.style.display = "none";
+
+// // searchbar
+// Dummy product data
+const products = [
+    { id: 1, name: "Amala" },
+    { id: 2, name: "Egusi" },
+    { id: 3, name: "Iyan" },
+    { id: 4, name: "Coke" },
+    { id: 5, name: "Pizza" },
+    { id: 6, name: "Gala" },
+    { id: 7, name: "Eba" },
+    { id: 8, name: "Jollof Rice" },
+  ];
+  
+  const searchInput = document.getElementById('searchInput');
+  const resultsContainer = document.getElementById('resultsContainer');
+  
+  function filterProducts(searchTerm) {
+    const filteredProducts = products.filter(product =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    displayProducts(filteredProducts);
   }
-});
+  
+  function displayProducts(products) {
+    resultsContainer.innerHTML = '';
+    products.forEach(product => {
+      const li = document.createElement('li');
+      li.textContent = product.name;
+      resultsContainer.appendChild(li);
+    });
+  }
+  
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.trim();
+    if (searchTerm.length > 0) {
+      filterProducts(searchTerm);
+    } else {
+      resultsContainer.innerHTML = '';
+    }
+  });
+
 
 
 // slider
