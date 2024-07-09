@@ -51,7 +51,9 @@ const products = [
     { id: 5, name: "Pizza" },
     { id: 6, name: "Gala" },
     { id: 7, name: "Eba" },
-    { id: 8, name: "Jollof Rice" },
+    { id: 8, name: "Jollof Rice"},
+    { id: 9, name: "Fried Rice"},
+    { id: 10, name: "Agbado Sunsun"}
   ];
   
   const searchInput = document.getElementById('searchInput');
