@@ -40,7 +40,7 @@ TOP BAR SECTION
 <div class="topbarsec">
     <div class="container">
 
-      <address class="topbar-items">
+      <div class="topbar-item">
         <div class="icon">
           <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
         </div>
@@ -48,11 +48,11 @@ TOP BAR SECTION
         <span class="span">
           Soun Ajagugbade Street, Bodija Estate, Oyo, NG
         </span>
-      </address>
+      </div>
 
       <div class="divider"></div>
 
-      <div class="topbar-items item-2">
+      <div class="topbar-item item-2">
         <div class="icon">
           <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
         </div>
@@ -106,13 +106,14 @@ TOP BAR SECTION
         <ul class="navbar-list">
 
           <div class="search-container">
-            <input type="text" placeholder="Search.." class="search-input">
+
+            <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Search products...." class="search-input">
             <i class="fas fa-search search-icon"></i>
-            <div class="dropdown-content">
-                <a href="#">Dropdown Item 1</a>
-                <a href="#">Dropdown Item 2</a>
-                <a href="#">Dropdown Item 3</a>
             </div>
+
+            <ul id="resultsContainer" class="results-container"></ul>
+            
           </div>
 
           <li class="navbar-item">
@@ -569,7 +570,7 @@ Repellat blanditiis quam incidunt!</p>
 </section>
 
 
-<!-- about ua -->
+<!-- about us -->
 <div class="aboutUsContainer">
   <div class="aboutImg">
       <!-- <h2>Our Stories <hr> </h2> -->
@@ -582,30 +583,55 @@ Repellat blanditiis quam incidunt!</p>
   </div>
 </div>
 
+<!-- OUR STRENGTH -->
 <div class="ourStrength">
   <img class="logo8" src="assets/Logo7.png">
   <h1>Our Strength</h1>
-  <div class="hygenicFood">
+  </div>
+<div class="our-strength-grid">
+
+  <div class="os-grid os-grid-1">
       <img src="assets/Logo8.png">
       <h2>Hygienic Food</h2>
       <h3>We nourish your body and fuel your life with every bite.</h3>
   </div>
-  <div class="hygenicFood">
+
+  <div class="os-grid os-grid-2">
       <img src="assets/Logo9.png">
       <h2>Fresh Environment</h2>
       <h3>Top notch food taste, clean and friendly environment.</h3>
   </div>
-  <div class="hygenicFood">
+
+  <div class="os-grid os-grid-3">
       <img src="assets/Logo11.png">
       <h2>Skilled Chefs</h2>
       <h3>We leave smile and happy with our experience Chefs.</h3>
   </div>
-  <div class="hygenicFood">
+
+  <div class="os-grid os-grid-4">
       <img src="assets/Logo12.png">
       <h2>Event & Party</h2>
       <h3>We comunicate the language of food at every event and party.</h3>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- //Testimonia//* -->
 <div class="slider-body">
@@ -789,7 +815,7 @@ Repellat blanditiis quam incidunt!</p>
   
   
   
-    <!-- footer-section -->
+    footer-section
     <div class="sec">
       <section class="footer-new">
       <footer>
