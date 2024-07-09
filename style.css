@@ -1,3 +1,6 @@
+body {
+    background-color: black;
+}
 :root{
     /* font family */
     --main-font-family: "Forum", serif;
@@ -803,19 +806,19 @@
         transform: rotateY(180deg);
     }
     
-    #middle-image {
-        padding-top: 10rem;
+    /* #middle-image {
+        padding-top: 7rem;
         
-    }
+    } */
     #MiddleDiv{
-     padding-top: 15rem;
+     padding-top: 2px;
      justify-content: space-around;
      
     }
     
     #DelMo {
-        margin-top: 2rem;
-        padding-top: 4rem;
+        /* margin-top: 2rem;
+        padding-top: 4rem; */
     }
     
     .btn {
@@ -876,23 +879,23 @@
         margin-top: 10px;
     }
     
-    .submenu1, .submenu2, .submenu3 {
+    /* .submenu1, .submenu2, .submenu3 {
         display: none;
         background-color: #333;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
+    } */
     
     /* .home-menu:hover .submenu1, .submenu2, .submenu3 {
         display: block;
     } */
     
-    .submenu1, .submenu2, .submenu3 p {
+    /* .submenu1, .submenu2, .submenu3 p {
         color: white;
         margin: 0;
         padding: 5px 0;
-    }
+    } */
     .Menulink{
         color: white;
     }
@@ -2192,16 +2195,418 @@
     
     
     
+ 
+.section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+.arrowImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}
+
+.mx-4 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.label-2 {
+    color: #c57c15;
+}
+
+.SubText {
+    color: white;
+}
+
+.home-menu {
+    /* background-image: url(./assets/img-pattern.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s, background-size 0.5s;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.home-menu:hover {
+    transform: scale(1.05);
+}
+.OfferText{
+    color: #c57c15;
+    font-size: xx-large;
+}
+.home-menu img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    transition: transform 0.5s;
+
+}
+
+.home-menu:hover img {
+    transform: rotateY(180deg);
+}
+
+#middle-image {
+    padding-top: 0.5rem;
+    
+}
+#MiddleDiv{
+ padding-top: 15rem;
+ justify-content: space-around;
+ 
+}
+
+#DelMo {
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.btn {
+    background-color: #c57c15;
+}
+
+.testi {
+    padding: 60px 0;
+    position: relative;
+}
+
+.has-bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    font-size: 100px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.headline-2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.profile-name {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.submenu1, .submenu2, .submenu3 {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* .home-menu:hover .submenu1, .submenu2, .submenu3 {
+    display: block;
+} */
+
+.submenu1, .submenu2, .submenu3 p {
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+}
+.Menulink{
+    color: white;
+}
+.Menu-Div{
+    cursor: pointer;
+   margin-top: 30px;
+    background-color: #c57c15;
+    border: 4px;
+
+}
+
+
+ #Loc-Dishes{
+   display: none;
+   /* background-image: url(./assets/Lady\ Eating.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s, background-size 0.5s;
+    position: relative;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: space-between;
+    transition: transform 1s infinite;
+}
+#Loc-Dishes:hover{
+    transform: scale(1.05);
+} 
+#Loc-Dishes::after{
+    content: "";
+}
+#Loc-Dishes img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    transition: transform 0.5s infinite;
+}
+#Loc-Dishes:hover img{
+transform: translateX(180deg);
+}
+#Item-List{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', 
+    Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Menulist{
+/* background-image: url(./assets/Submenu-Bg.jpg); */
+background-repeat: no-repeat;
+background-size: cover;
+}
+#Snacks{
+    display: none;
+     background-repeat: no-repeat;
+   /* background-image: url(./assets/snacks-bg.jpeg); */
+   background-size: cover;
+     transition: transform 0.5s, background-size 0.5s;
+     position: relative;
+     overflow: hidden;
+     justify-content: space-between;
+     transition: transform 1s infinite;
+ }
+ /* #Snacks{
+    display: none;
+     background-repeat: no-repeat;
+   background-image: url(./assets/);
+     transition: transform 0.5s, background-size 0.5s;
+     position: relative;
+     overflow: hidden;
+     justify-content: space-between;
+     transition: transform 1s infinite;
+ } */
+  #Drinks{
+    display: none;
+     background-repeat: no-repeat;
+    /* background-image: url(./assets/drink-bg.jpeg); */
+    background-size:cover;
+     transition: transform 0.5s, background-size 0.5s;
+     position: relative;
+     overflow: hidden;  
+     justify-content: space-between;
+     transition: transform 1s infinite;
+ } 
+ #Int-Dishes{
+    display: none;
+    background-repeat: no-repeat;
+    /* background-image: url(./assets/int-dishes.jpeg); */
+    background-size: cover;
+    transition: transform 0.5s, background-size 0.5s;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: transform 1s infinite;
+ }
+
+ .slider-body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+ 
+  /* background-color: #f4f4f4; */
+}
+
+.slider-containers {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  color: burlywood;
+  height: 90%;
+  /* max-width: 600px; */
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  /* background-color: black; */
+  /* background-image: url('./assets/testiBackground.jpg'); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Aslider {
+  margin-top: 3rem;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.slides {
+  min-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.slides p {
+ 
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.slides h1{
+  font-weight: 700;
+  margin: 0;
+  font-size: 50px;
+  color: burlywood;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  user-select: none;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.img-Testy{
+  width: 400px;
+  margin-top: 1.5rem;
+  border-radius: 3.5rem;
+}
+.Testimon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+ /* .testimonial-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial-content {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
+
+  .author-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+
+  .author-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .author-info {
+    font-weight: bold;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #007aff;
+  } */
+
     /**
     * responsive for larger than 1400px screen
     */
     
     @media (min-width: 1400px) {
     
-    /**
-        * HEADER
-        */
+        /**
+            * HEADER
+            */
+        
+        .navbarsec { margin-inline: auto; }
+        
+        }
     
-    .navbarsec { margin-inline: auto; }
-    
-    }

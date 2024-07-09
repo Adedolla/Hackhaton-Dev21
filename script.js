@@ -164,7 +164,7 @@ function toggleCart() {
 
 
 
-// const testimonials = document.querySelectorAll('.testimonial');
+
 let currentTestimonial = 0;
 // var MinMenu = document.getElementById('Loc-Dishes');
 var BrfSubMenu = document.getElementById('MenuLink1');
@@ -182,69 +182,115 @@ var IntFodSubMenu = document.getElementById('Int-SubMenu');
 var SnacksSubMenu =document.getElementById('Snacks-SubMenu')
 
 
-
-BrfSubMenu.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
+LocFodSubMenu.addEventListener('click', function(){
     LocDishes.style.display = 'Block';
     IntDishes.style.display = 'None';
     SnackSec.style.display = 'None';
     DrinksSec.style.display = 'None';
+    SecList.style.display = 'None'
 })
-
-BrfSubMenu2.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
+IntFodSubMenu.addEventListener('click', function(){
     LocDishes.style.display = 'None';
     IntDishes.style.display = 'Block';
     SnackSec.style.display = 'None';
     DrinksSec.style.display = 'None';
+    SecList.style.display = 'None'
 })
 
-BrfSubMenu3.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
+SnacksSubMenu.addEventListener('click', function(){
     LocDishes.style.display = 'None';
     IntDishes.style.display = 'None';
     SnackSec.style.display = 'Block';
     DrinksSec.style.display = 'None';
+    SecList.style.display = 'None'
 })
-
 DrinksSubMenu.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
     LocDishes.style.display = 'None';
     IntDishes.style.display = 'None';
     SnackSec.style.display = 'None';
     DrinksSec.style.display = 'Block';
+    SecList.style.display = 'None'
+})
 
-})
-IntFodSubMenu.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
-    LocDishes.style.display = 'None';
-    IntDishes.style.display = 'Block';
-    SnackSec.style.display = 'None';
-    DrinksSec.style.display = 'None';
 
-})
-SnacksSubMenu.addEventListener('click', function(){
-    SecList.style.display = 'None';
-    Testimonial.style.display = 'None';
-    LocDishes.style.display = 'None';
-    IntDishes.style.display = 'None';
-    SnackSec.style.display = 'Block';
-    DrinksSec.style.display = 'None';
-    
-})
-LocFodSubMenu.addEventListener('click', function(){
- SecList.style.display = 'None';
- Testimonial.style.display = 'None';
- LocDishes.style.display = 'Block';
- IntDishes.style.display = 'None';
- SnackSec.style.display = 'None';
- DrinksSec.style.display = 'None'
-})
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  
+  const slides = document.querySelectorAll('.slides');
+  const prevButton = document.querySelector('.prev-btn');
+  const nextButton = document.querySelector('.next-btn');
+  let currentIndex = 0;
+  const slideInterval = 3500; // Time in milliseconds (5000ms = 5 seconds)
+  
+  function showSlide(index) {
+      slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          if (i === index) {
+              slide.classList.add('active');
+          }
+      });
+      const slider = document.querySelector('.Aslider');
+      slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+  
+  function nextSlide() {
+      currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      showSlide(currentIndex);
+  }
+  
+  prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      showSlide(currentIndex);
+  });
+  
+  nextButton.addEventListener('click', () => {
+      nextSlide();
+  });
+  
+  // Automatically advance the slide every slideInterval milliseconds
+  const autoSlides = setInterval(nextSlide, slideInterval);
+  
+  showSlide(currentIndex);
+  
+// let slideIndex = 0;
+
+// function showSlides() {
+//     const slides = document.querySelectorAll('.slide');
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none';
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1;
+//     }
+//     slides[slideIndex - 1].style.display = 'block';
+//     setTimeout(showSlides, 3000); // Change testimonial every 3 seconds
+// }
+
+// function moveSlide(n) {
+//     slideIndex += n;
+//     const slides = document.querySelectorAll('.slide');
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1;
+//     }
+//     if (slideIndex < 1) {
+//         slideIndex = slides.length;
+//     }
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none';
+//     }
+//     slides[slideIndex - 1].style.display = 'block';
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     showSlides();
+// });
 
 // function FodSubMenu (){
 //     LocDishes.style.display = 'Block';
