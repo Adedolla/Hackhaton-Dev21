@@ -26,17 +26,18 @@ body::before{
   content: '';
   position:absolute;
   inset:0;
-  background: url(/images/tim-mossholder-FH3nWjvia-U-unsplash.jpg);
+  background: url(assets/clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position:bottom;
+  background-position:center;
+  filter: blur(2px);
 
 }
 body::after{
   content: '';
   position:absolute;
   inset:0;
-  background: url(/images/jon-tyson-ZA9PHAnVP5g-unsplash.jpg);
+  background: url(assets/jon-tyson-ZA9PHAnVP5g-unsplash.jpg);
   /* background: url(/images/jason-leung-poI7DelFiVA-unsplash.jpg); */
  
   background-attachment: fixed;
@@ -73,7 +74,7 @@ body.signup .container{
 position: absolute;
 height:100%;
 width:100%;
-background:repeating-conic-gradient(from var(--a),#45f3ff 0%,#45f3ff 10%,transparent 10%,transparent 80%,#45f3ff 100%);
+background:repeating-conic-gradient(from var(--a),hsl(38, 61%, 73%) 20%,hsl(38, 61%, 73%) 15%,transparent 15%,transparent 70%,hsl(38, 79%, 54%)100% ); 
 border-radius: 20px;
 animation: animate 2.5s linear infinite;
 }
@@ -105,7 +106,7 @@ body.signup .container::before{
   content: '';
 position: absolute;
 inset: 5px;
-background: url(/images/tim-mossholder-FH3nWjvia-U-unsplash.jpg);
+background: url(/assets/tim-mossholder-FH3nWjvia-U-unsplash.jpg);
 /* background: url(/images/footer-form-bg.png); */
 background-attachment: fixed;
 background-size: contain;
@@ -116,7 +117,7 @@ filter:blur(10px);
   content: '';
 position: absolute;
 inset: 5px;
-background: url(/images/tim-mossholder-FH3nWjvia-U-unsplash.jpg);
+background: url(/assets/tim-mossholder-FH3nWjvia-U-unsplash.jpg);
 /* background: url(/images/footer-form-bg.png); */
 background-attachment: fixed;
 background-size: contain;
@@ -125,7 +126,7 @@ filter:blur(15px);
 }
 body.signup .container span::before,
 body.signup .container span::after{
-  background: url(/images/jon-tyson-ZA9PHAnVP5g-unsplash.jpg);
+  background: url(assets/jon-tyson-ZA9PHAnVP5g-unsplash.jpg);
  
   background-attachment: fixed;
 background-size: contain;
@@ -174,7 +175,7 @@ form .inputBox{
 }
 
 form .inputBox a{
-font-size: 0.85em;
+font-size: 0.88em;
 
 }
 form .inputBox a:nth-child(2){
